@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | El Diario KOKU</title>
+<meta name="description" content="El Diario KOKU: artículos para tu rutina diaria y seis recetas para complementar tu arroz KOKU teriyaki.">
+<link rel="icon" href="img/isotipo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/ajustes.css">
+</head>
+<body data-pagina="blog">
+<header id="encabezado"></header>
+
+<main>
+<!-- Vista de lista -->
+<div id="vista-lista">
+<section class="sec hero granos" style="padding-bottom:64px">
+<div class="wrap dos">
+<div class="entra">
+<div class="eyebrow">Blog</div>
+<h1>El Diario KOKU.</h1>
+<p class="lead">Artículos para tu rutina diaria y recetas para darle un toque extra a tu arroz KOKU.</p>
+<div class="btns"><a class="btn btn-azul" href="#recetas">Ver recetas con KOKU</a><a class="btn btn-linea" href="#articulos">Ver artículos</a></div>
+</div>
+<figure class="foto r32"><img src="img/Designer estudiante.png" alt="Joven estudiando con su laptop junto a la ventana, con una taza de té" width="1000" height="666" fetchpriority="high"></figure>
+</div>
+</section>
+
+<section class="sec sec-azul" id="recetas">
+<div class="wrap">
+<div class="centro centrado">
+<div class="eyebrow">Recetas</div>
+<h2>Dale un toque extra a tu KOKU.</h2>
+<div class="regla"></div>
+<p class="lead">Seis ideas para complementar tu arroz con ingredientes frescos mientras reposa. Cada una tiene su propia ficha.</p>
+</div>
+<div class="rejilla" id="lista-recetas"></div>
+</div>
+</section>
+
+<section class="sec" id="articulos">
+<div class="wrap">
+<div class="centro centrado" style="margin-bottom:40px">
+<div class="eyebrow">Artículos</div>
+<h2>Haz una pausa. Inspírate.</h2>
+<div class="regla"></div>
+</div>
+<div class="filtros" id="filtros" role="group" aria-label="Filtrar artículos por categoría"></div>
+<div style="margin-bottom:40px"><label for="q" style="display:block;font-weight:600;font-size:14px;margin-bottom:8px;color:var(--azul)">Buscar artículos</label><input id="q" class="buscar" type="search" placeholder="Escribe una palabra…"></div>
+<div class="rejilla" id="lista-posts"></div>
+<p class="centro frase" id="sin-resultados" style="margin-top:20px" hidden>No encontramos artículos con esa búsqueda. Prueba con otra palabra o elige otra categoría.</p>
+</div>
+</section>
+</div>
+
+<!-- Vista de artículo / receta -->
+<div id="vista-articulo" hidden>
+<section class="sec hero granos" style="padding-bottom:48px">
+<div class="wrap" style="max-width:960px">
+<a class="btn btn-linea" style="min-height:44px;margin-bottom:32px" href="blog.html" id="art-volver">← Volver al blog</a>
+<div class="meta" id="art-meta"></div>
+<h1 style="font-size:clamp(30px,4.4vw,50px)" id="art-titulo"></h1>
+<p class="lead" id="art-desc"></p>
+</div>
+</section>
+<section class="sec" style="padding-top:0">
+<div class="wrap" style="max-width:960px">
+<figure class="foto r32" id="art-foto"><img id="art-img" src="img/blog img 1.png" alt="" width="1000" height="666"><figcaption id="art-cap" hidden></figcaption></figure>
+<div class="cuerpo-art" id="art-cuerpo" style="margin-top:44px"></div>
+
+<div id="art-receta" hidden>
+<div class="rejilla" style="margin:8px 0 28px">
+<div class="card" style="flex:1 1 320px"><h3 style="margin-bottom:12px">Ingredientes</h3><ul class="lista-ing" id="art-ing"></ul></div>
+<div class="card" style="flex:1.4 1 360px"><h3 style="margin-bottom:18px">Preparación paso a paso</h3><ol class="pasos-rec" id="art-pasos"></ol></div>
+</div>
+<div class="card" style="margin-bottom:24px"><div class="eyebrow" style="margin-bottom:10px">Presentación final</div><p id="art-final" style="font-size:18px"></p></div>
+<p class="nota-sug">Las cantidades son sugerencias para una porción individual. No forman parte de la información oficial del producto: ajústalas a tu gusto.</p>
+</div>
+
+<div id="art-extra" hidden>
+<h2 style="font-size:clamp(22px,2.6vw,30px);margin:44px 0 20px">Más inspiración con arroz KOKU</h2>
+<div class="galeria" id="art-galeria"></div>
+</div>
+
+<div class="navfila" id="art-nav"></div>
+</div>
+</section>
+</div>
+</main>
+
+<footer id="pie"></footer>
+<script src="js/componentes.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

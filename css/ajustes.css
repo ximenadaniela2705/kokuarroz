@@ -1,0 +1,71 @@
+/* Ajustes para la versión publicada (Vercel) y adaptación a todos los dispositivos */
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+[id]{scroll-margin-top:104px}
+[hidden]{display:none!important}
+img{height:auto}
+.brand img,.pie .logo img{width:auto}
+img[src$="tazon-ilustracion.png"]{animation:flota 5s ease-in-out infinite}
+img[src$="isotipo.png"]{transition:transform .6s}
+img[src$="isotipo.png"]:hover{transform:rotate(360deg)}
+
+/* Fotos del hero */
+.hero-fotos{display:flex;gap:20px;align-items:stretch}
+.hero-fotos .ph{min-height:440px;transition:transform .25s ease-out}
+.hero-fotos .f1{flex:1.1}
+.hero-fotos .f2{flex:.9;margin-top:48px}
+
+/* Utilidades */
+.centrado{max-width:720px;margin:0 auto 52px}
+.fila-centro{justify-content:center}
+.tabla-wrap{overflow-x:auto}
+.paso-btn{background:rgba(72,38,25,.05);border:1px solid rgba(72,38,25,.14)}
+.cuerpo-art p{margin-bottom:22px;font-size:18px;max-width:68ch}
+.lista-ing li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(72,38,25,.14)}
+.lista-ing li:last-child{border-bottom:0}
+.lista-ing li:before{content:"●";color:var(--dorado);font-weight:800}
+.pasos-rec li{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start}
+.pasos-rec .n{flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:var(--dorado);color:var(--cafe);font-weight:800;display:flex;align-items:center;justify-content:center}
+.gnum{font-weight:800;font-size:72px;line-height:1;color:var(--dorado);margin-bottom:8px}
+.gnum.az{color:var(--azul)}
+.ic.big{width:120px;height:120px;stroke-width:1.6}
+.filtros{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px;align-items:center}
+.sello-fila{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.campo .err[hidden]{display:none}
+
+/* Tablet */
+@media(max-width:900px){
+.dos{gap:36px}
+.hero-fotos .ph{min-height:300px}
+.hero-fotos .f2{margin-top:32px}
+.gnum{font-size:56px}
+}
+
+/* Celular */
+@media(max-width:640px){
+.top-in{height:76px;gap:16px}
+.brand img{height:52px}
+.hero-fotos{flex-direction:column}
+.hero-fotos .f2{margin-top:0}
+.hero-fotos .ph{min-height:240px}
+.ph{min-height:220px}
+.btns .btn{width:100%}
+.fila-centro .btn{width:100%}
+.lead{font-size:17px}
+.reloj-txt .t{font-size:44px}
+.nut th,.nut td{padding:12px 10px;font-size:15px}
+.pie-fila{gap:32px}
+.cg{font-size:13px}
+.gnum{font-size:48px}
+.ic.big{width:90px;height:90px}
+.card[style*="padding:44px"]{padding:26px!important}
+}
+
+/* Fotos: contenedores .foto (figure/a) */
+.foto{display:block;margin:0;border-radius:14px;overflow:hidden;background:rgba(7,81,110,.08)}
+.foto img{display:block;width:100%;height:auto}
+.foto.r32 img{aspect-ratio:3/2;object-fit:cover}
+.foto.r43 img{aspect-ratio:4/3;object-fit:cover}
+.foto.banda img{aspect-ratio:1024/359;object-fit:cover}
+.foto figcaption{padding:10px 14px;font-size:14px}
+.post .foto{border-radius:0}
+.hero-fotos .foto img{height:100%;min-height:300px;object-fit:cover}
